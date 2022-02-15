@@ -1,9 +1,19 @@
 :root{
-    --color1 : rgb(255, 255, 255);
-    --color2: rgb(24, 0, 109);
-    --color3: rgba(117, 148, 252, 0.726);
-    --color4:rgb(175, 99, 37);
+    --backgroung : #fffce9;
+    --bandeau: #02361f;
+    --color2: #02361f;
+    --color3: #1c1b1b;
+    --color4: #ffffff;
+    --background: #fffce9;
     --hauteur-menu: 50px;
+    --heading-font-style: normal;
+    --text-color: #02361f;
+    --text-color-light: #ef1818;
+    --border-color: #d9decb;
+    --button-background: #03361e;
+    --header-background: #1c1b1b;
+
+
 }
 
 *{
@@ -13,8 +23,13 @@
     padding : 0px;
     margin : 0px;
     
+    
     }
 
+.bandeau{
+  color: var(--color3);
+  text-decoration:none; 
+}
 
 
 
@@ -22,13 +37,10 @@ body{
     font-family: "ProximaNova-Regular", "Helvetica", Arial, sans-serif;
     color: var(--color4);
     background: var(--color1);
-
+    
 }
 
-.bandeau{
-    color: brown;
-    background: blue;
-}
+
 
 a{
     color: var(--color3);
@@ -37,11 +49,49 @@ a{
 }
 
 
-
 a:hover{
     color: var(--color2);
     /* font-style: oblique; */
 }
+
+/* ---------------------création de la galerie en grille 3X3 ---------------------*/
+.game-board {
+  margin-left: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform: translateX(-50%) ;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px; 
+  z-index: 0;
+}
+
+/* for some css stylings */
+
+.box {
+display: flex;
+align-items: center;
+justify-content: center;
+max-height: 100%;
+max-width: 100%;
+overflow: hidden;
+padding: 15px;
+}
+
+.img_galerie:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+.img_galerie{
+  max-height: 100%;
+  max-width: 100%;
+  border: 0;
+  margin: 0;
+}
+
+
+/* ---------------------fin de la grille --------------------- */
+
+
 
 
 
@@ -55,6 +105,7 @@ https://www.codeur.com/tuto/css/creer-menu-deroulant-css/ */
     position: sticky;
     top: 0;
     color: var(--color1);
+    z-index: 1;
   }
   
   nav > ul {
