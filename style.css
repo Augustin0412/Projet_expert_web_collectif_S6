@@ -4,7 +4,7 @@
     --background : #fffce9;
     --bandeau: #02361f;
     --middle-color-transition:#012414;
-    --color2: #02361f;
+    --vert_opcacity_faible: #02361f73;
     --color3: #1c1b1b;
     --color4: #ffffff;
     --hauteur-menu: 50px;
@@ -33,9 +33,11 @@
   text-decoration:none;
   background: var(--bandeau);
   display: block;
-  position: 0;
+  /* position: fixed; */ 
+  /*il faut le mettre en fixed pour que le menu ne bouge pas quand on scroll mais ça ne marche pas */
   width: 100%;
   box-shadow:0px 0px 12px rgba(0, 0, 0, 0.9);
+  z-index: 9999;
 }
 
 .bandeau:hover{
@@ -123,45 +125,73 @@ p{
 }
 
 
-
-
-/* ---------------------création de la galerie en grille 3X3 ---------------------*/
-.game-board {
+/* --------------------- Mise en forme du tableau des oeuvres --------------------- */
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
   margin-left: 50%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  transform: translateX(-50%) ;
-  display: grid;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns: 200px 200px 200px; 
-  /* z-index: 0; */
+  transform: translateX(-50%);
+  width: 90%;
+
 }
 
-/* for some css stylings */
+th, td {
+  padding: 1em;
+  background: var(--vert_opcacity_faible);
+  border-bottom: 2px solid var(--background);
+  text-align: center;
+}
+/* --------------------- Fin du tableau --------------------- */
 
-.box {
-display: flex;
-align-items: center;
-justify-content: center;
-max-height: 100%;
-max-width: 100%;
-overflow: hidden;
-padding: 15px;
+
+.liste_oeuvres{
+  margin-top: 30px;
+  line-height: 2em;
+}
+
+h3{
+  font-size: 2em;
+}
+h4{
+  margin-top: 20px;
+}
+
+/* ---------------------création de la galerie en tableau ---------------------*/
+
+
+.galerie_photos{
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 700px;
+  z-index: 1;
+  
+}
+
+.ligne_galerie{
+  padding: 1em;
+  background:none;
+  border-bottom: 0;
+  text-align: center;
+  z-index: 1;
 }
 
 .img_galerie:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 
 .img_galerie{
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 200px;
+  max-width: 200px;
   border: 0;
   margin: 0;
+  z-index: 1;
 }
 
-
-
-/* ---------------------fin de la grille --------------------- */
+/* ---------------------fin de la galerie --------------------- */
 
 
 
