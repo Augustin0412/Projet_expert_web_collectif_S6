@@ -107,10 +107,19 @@ p{
 
 }
 
-a{
+.lien_menu{
     text-decoration:none;
     color: var(--color4);
     background: var(--bandeau);
+}
+
+.lien_affiche{
+  text-decoration: underline;
+  color: var(--text-color);
+  font-style: italic;
+}
+.lien_affiche:hover{
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.897) ;
 }
 
 
