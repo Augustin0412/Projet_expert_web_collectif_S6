@@ -19,17 +19,16 @@
               <a href="#">Morgan Freeman</a>
               <ul class="sous-menu">
                 <li><a class="lien_menu" href="bio_perso.html">Biographie personelle</a></li>
-            <li><a class="lien_menu" href="bio_pro.html">Biographie professionnelle</a></li>
-            <li><a class="lien_menu" href="liste_oeuvres.html">Oeuvres </a></li>
-            <li><a class="lien_menu" href="galerie.html">Galerie</a></li>
-          </ul>
-        </li>
-        <li class="menu-deroulant">
-          <a class="lien_menu" href="#">Pierre Niney</a>
-          <ul class="sous-menu">
-            <li><a class="lien_menu" href="../pierre_niney/bio_perso_p.html">Biographie personnelle</a></li>
-            <li><a class="lien_menu" href="../pierre_niney/bio_pro_p.html"> Biographie professionnelle</a></li>
-			<li><a class="lien_menu" href="../pierre_niney/liste_oeuvres.html"> Oeuvres </a></li>
+                <li><a class="lien_menu" href="bio_pro.html">Biographie professionnelle</a></li>
+                <li><a class="lien_menu" href="liste_oeuvres.html">Oeuvres </a></li>
+                <li><a class="lien_menu" href="galerie.html">Galerie</a></li>
+              </ul>
+            </li>
+            <li class="menu-deroulant">
+              <a class="lien_menu" href="#">Melissa</a>
+              <ul class="sous-menu">
+                <li><a class="lien_menu" href="#">Bio</a></li>
+                <li><a class="lien_menu" href="#">Vie</a></li>
               </ul>
             </li>
           </ul>

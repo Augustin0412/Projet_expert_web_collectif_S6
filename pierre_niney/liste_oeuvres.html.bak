@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title> Les oeuvres de Pierre Niney</title>
-    <link rel="stylesheet" href="morgan_freeman/style.css" type="text/css" media="screen" > <!-- à changer -->
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 
 <body>
-	<h1> Les Oeuvres de Pierre Niney </h1>
+	<div class="bandeau">
+		<a class="lien_menu" href="../index.html">
+			<h1> STARBIO </h1>
+		</a>
+		<div>
+			<h2> Les oeuvres de Pierre Niney</h2>
+		</div>
+		<nav> <!-- /*menu déroulant*/ -->
+			<ul>
+				<li class="menu-deroulant">
+				<a href="#">Morgan Freeman</a>
+				<ul class="sous-menu">
+					<li><a class="lien_menu" href="../morgan_freeman/bio_perso.html">Biographie personelle</a></li>
+					<li><a class="lien_menu" href="../morgan_freeman/bio_pro.html">Biographie professionnelle</a></li>
+					<li><a class="lien_menu" href="../morgan_freeman/liste_oeuvres.html">Oeuvres </a></li>
+					<li><a class="lien_menu" href="../morgan_freeman/galerie.html">Galerie</a></li>
+				</ul>
+				</li>
+				<li class="menu-deroulant">
+				<a class="lien_menu" href="#">Pierre Niney</a>
+				<ul class="sous-menu">
+					<li><a class="lien_menu" href="bio_perso_p.html">Biographie personnelle</a></li>
+					<li><a class="lien_menu" href="bio_pro_p.html"> Biographie professionnelle</a></li>
+					<li><a class="lien_menu" href="liste_oeuvres.html"> Oeuvres </a></li>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
 	
+	<div class = "container">
 	<h2> Récompenses </h2>
 	<table>	
 		<tr>
@@ -36,7 +67,20 @@
 	<p> Liste des films sortis entre 2012 et 2021 dans lesquels Pierre Niney a un rôle. </p>
 	<ul>
 		<li> 2012 : Comme des frères d'Hugo Gélin : Maxime </li>
-
+		<li> 2013 : 20 ans d’écart de David Moreau : Balthazar Apfel </li>
+		<li> 2014 : Yves Saint Laurent de Jalil Lespert : Yves Saint Laurent </li>
+		<li> 2015 : Un homme idéal de Yann Gozlan : Mathieu Vasseur </li>
+		<li> 2016 : Cinq d’Igor Gotesman : Samuel </li>
+		<li> 2016 : Altamira d’Hugh Hudson : Paul Ratier </li>
+		<li> 2016 : Frantz de François Ozon : Adrien Rivoire </li>
+		<li> 2016 : L’Odyssée de Jérôme Salle : Philippe Cousteau </li>
+		<li> 2017 : La Promesse de l’aube d’Éric Barbier : Romain Gary </li>
+		<li> 2018 : Sauver ou périr de Frédéric Tellier : Franck Pasquier </li>
+		<li> 2019 : Deux moi de Cédric Klapisch : « Disque dur » </li>
+		<li> 2020 : Amants de Nicole Garcia : Simon </li>
+		<li> 2020 : Boîte noire de Yann Gozlan : Mathieu Vasseur </li>
+		<li> 2021 : OSS 117 : Alerte rouge en Afrique noire de Nicolas Bedos </li>
 	</ul>
+	</div>
 </body>
 </html>
