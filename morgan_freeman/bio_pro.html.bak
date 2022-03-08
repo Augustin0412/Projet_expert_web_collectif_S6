@@ -12,7 +12,7 @@
 
   <div class="bandeau">
     <a class="lien_menu" href="../index.html"><h1>STARBIO</h1></a>
-    <div><h2>Biographie professionnelle de Morgan Freeman</h2></div>
+    <div><h2>Biographie professionnel</h2></div>
     <nav> <!-- /*menu déroulant*/ -->
       <ul>
         <li class="menu-deroulant">
